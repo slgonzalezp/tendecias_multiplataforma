@@ -1,0 +1,27 @@
+{
+    "/*": {
+        "target": "http://localhost:5000",
+        "secure": false
+    },
+    "/clientes/*": {
+        "target": "http://localhost:5000",
+        "pathRewrite": { "^/api": "" },
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/calculadora/*": {
+        "target": "http://localhost:5000",
+        "pathRewrite": { "^/api": "" },
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/products/*": {
+        "target": "http://localhost:5000",
+        "pathRewrite": { "^/api": "" },
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
